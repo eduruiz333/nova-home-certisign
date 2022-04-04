@@ -57,9 +57,11 @@ $yellow:#B5EA66;
             }
         }
     }
+
     .container {
         padding: 0 20px;
     }
+
     // ATÉ AQUI
     /////////////////////////////////////////////////////
 
@@ -213,7 +215,7 @@ $yellow:#B5EA66;
     .caas-video {
         padding: 0;
         overflow-x: hidden !important;
-        
+
         video {
             width: 1200px;
             height: 300px;
@@ -350,29 +352,32 @@ $yellow:#B5EA66;
             color: white;
             text-align: center;
             padding: 100px 0;
-          }
-          
-          .owl-prev,
-          .owl-next {
+        }
+
+        .owl-prev,
+        .owl-next {
             display: inline-block;
-          }
-          .owl-next {
+        }
+
+        .owl-next {
             float: right;
-          }
-          .slider-counter {
+        }
+
+        .slider-counter {
             text-align: center;
-          }
-          
-          .info {
+        }
+
+        .info {
             text-align: center;
             margin-top: 110px;
-          }
+        }
     }
-    
+
 
     ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
 
     @media screen and (min-width: 544px) {
+
         /////////////////////////////////////////////////////
         // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
         .banner {
@@ -382,9 +387,11 @@ $yellow:#B5EA66;
                 margin-right: auto !important;
             }
         }
+
         .container {
             max-width: 768px;
         }
+
         // ATÉ AQUI
         /////////////////////////////////////////////////////
 
@@ -548,14 +555,15 @@ $yellow:#B5EA66;
             button {
                 width: 167px;
                 font-size: 16px;
-                box-shadow: 5px 5px 8px -3px rgba(0,0,0,0.50);
+                box-shadow: 5px 5px 8px -3px rgba(0, 0, 0, 0.50);
                 padding: 10px;
             }
         }
-        
+
     }
 
     @media screen and (min-width: 993px) {
+
         /////////////////////////////////////////////////////
         // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
         .banner {
@@ -565,9 +573,11 @@ $yellow:#B5EA66;
                 margin-right: auto !important;
             }
         }
+
         .container {
             max-width: 993px;
         }
+
         // ATÉ AQUI
         /////////////////////////////////////////////////////
 
@@ -658,7 +668,7 @@ $yellow:#B5EA66;
                 line-height: 25px;
 
                 &.ico-infinite {
-                    background-position:20px 25px;
+                    background-position: 20px 25px;
                 }
 
                 &.ico-renew {
@@ -684,6 +694,7 @@ $yellow:#B5EA66;
     }
 
     @media screen and (min-width: 1367px) {
+
         ///////////////////////////////////////////////////// 
         // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
         .banner {
@@ -695,11 +706,13 @@ $yellow:#B5EA66;
                 padding-right: 0 !important;
             }
         }
+
         .container {
             max-width: 1200px;
             padding-left: 0 !important;
             padding-right: 0 !important;
         }
+
         // ATÉ AQUI
         /////////////////////////////////////////////////////
 
