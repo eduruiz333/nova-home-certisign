@@ -1,0 +1,48 @@
+#################################### NOVA HOME - URTENTE ¯\_(ツ)_/¯
+
+CARD
+https://csgnddnp.atlassian.net/browse/SC-1301
+
+MOBILE
+https://xd.adobe.com/view/2b63c055-52da-4b1f-a45d-63423b8f3e15-7e30/
+
+DESKTOP
+https://xd.adobe.com/view/fcb67a93-64f5-4778-bcb5-3eeeeb1c479f-a9e5/
+
+Medida do XD para desktop? 1200px
+Medida padrão dos notebooks: 1366x767
+
+===================================================
+
+CONFIGURAÇÃO ATUAL PARA COMPILAR SASS COM O GULP
+=> https://www.youtube.com/watch?v=Sk5jMurFHCo
+=> https://www.youtube.com/watch?v=Ktxw7enJ7SM (verificar este para recursos mais completos)
+
+npm init
+npm install gulp gulp-sass sass --save-dev
+
+Criar o arquivo gulpfile.js (MODELO FUNCIONANDO MUITO BEM AGORA)
+
+utilizar o comando gulp para rodar o compilador
+
+===================================================
+
+Paths para colocar no salesforce
+/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/Landing/certicredit/banner_peixes.jpg
+/conteudo/video/video_LP_CertiCredit_2.mp4?$staticlink$
+
+===================================================
+
+NA SANDBOX
+
+Criar dentro do "nacional" (sandbox) - 
+
+npm run compile:scss
+npm run compile:js
+npm run build
+
+utilizar o prophet upload no terminal - output
+
+===================================================
+
+

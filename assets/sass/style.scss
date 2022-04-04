@@ -1,0 +1,230 @@
+
+$font: 'Poppins', sans-serif;
+
+$f-light: 300;
+$f-regular: 400;
+$f-medium: 500;
+$f-semiBold: 600;
+$f-bold: 700;
+
+$blue:#003A5D;
+$orange: #FFAA00;
+$dark-grey: #7F7F7F;
+
+//gutters
+$gutter: 16px;
+$base:  calc($gutter / 2);
+
+//containers
+$fluidMax: 1920px;
+$fluidSmall: 1230px;
+$fluid: 90%;
+$container: 1312px;
+
+$grid-breakpoints: (
+    xs: 0,
+    sm: 544px,
+    md: 769px,
+    lg: 992px,
+    xl: 1200px
+) !default;
+
+$container-max-widths: (
+    md: 720px,
+    lg: 940px,
+    xl: 1312px
+) !default;
+
+body {
+  font-family: $font;
+}
+
+.container-fluid {
+    max-width: $fluid;
+    margin: 0 auto;
+}
+
+.container-big {
+    max-width: $fluidMax;
+    margin: 0 auto;
+}
+
+.container-small {
+    max-width: $fluidSmall;
+    margin: 0 auto;
+}
+
+.container {
+    max-width: $container;
+    margin: 0 auto;
+}
+
+.banner {
+  color: white;
+  font-weight: bold;
+  
+  position: relative;
+  height: 400px;// conferir no layout a altura de cada banner
+  overflow: hidden;
+  
+  > img {
+    position:absolute;
+    top: 0;
+    left: 0;
+    width:100%;
+    height: 100%;
+    object-fit: cover;    
+  }
+
+  .title {
+      font-size: 72px;
+      font-weight: 900;
+      line-height: 51px;
+  }
+  
+}
+
+h1 {
+    font-weight: $f-bold;
+    font-size: 48px;
+    color: #BCBCBC;
+}
+
+p {
+    font-size: 18px;
+    line-height: 27px;
+    color: $blue;
+}
+
+.icon-chat {
+    list-style-type: none;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    height: 250px;
+    
+
+    li {
+        position: relative;
+        margin-bottom: 25px;
+        box-sizing: border-box;
+        width: 33%;
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 700;
+        color: $blue;
+        
+        &::before {
+            content: '';
+            width: 26px;
+            height: 26px;
+            position: absolute;
+            top: 3px;
+            background: url('../img/blt-chat.svg') 0 0 no-repeat;
+            margin-left: -36px;
+        }
+    }
+}
+
+.box-mission {
+    h2 {
+        font-size: 48px;
+        font-weight: $f-light;
+        line-height: 57px;
+        color: $blue;
+    }
+    
+    h3 {
+        font-size: 22px;
+        font-weight: $f-bold;
+        color: $orange;
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: $f-regular;
+        line-height: 21px;
+        color: $dark-grey;
+    }
+}
+
+.chat-topics-content {
+    margin-top: -110px;
+
+    .chat-topics {
+        width: 25%;
+    
+        .bg-chat {
+            width: 218px;
+            height: 220px;
+            background: url('../img/bg-chat.png') center center no-repeat;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 22px;
+            line-height: 26px;
+            color: $orange;
+            font-weight: $f-bold;
+            padding: 0 40px;
+            margin: 0 auto 20px;
+            text-align: center;
+        }
+    
+        p {
+            font-size: 18px;
+            line-height: 21px;
+            color: $dark-grey;
+            width: 218px;
+            margin: 0 auto;
+            text-align: left;
+        }
+    }
+}
+
+.title-double-format {
+    h2 {
+        font-size: 48px;
+        color: $blue;
+        line-height: 57px;
+
+        span {
+            display: block;
+            font-size: 48px;
+            font-weight: $f-bold;
+            line-height: 38px;
+        }
+    }
+
+    p {
+        font-size: 18px;
+        font-weight: $f-light;
+        line-height: 27px;
+        color: $dark-grey;
+    }
+}
+
+
+.inovation {
+    h2 {
+        font-size: 36px;
+        font-weight: $f-bold;
+        line-height: 36px;
+        color: $blue;
+    }
+    p {
+        font-size: 18px;
+        font-weight: $f-light;
+        line-height: 27px;
+        color: $dark-grey;
+    }
+}
+
+
+
+
+
+
+
+
+
+
