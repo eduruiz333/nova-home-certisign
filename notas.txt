@@ -48,11 +48,13 @@ Medida padrão dos notebooks: 1366x767
 
 #################################### RECURSOS
 
-Background com transparência
+BACKGROUND COM TRANSPARÊNCIA
 https://cssgradient.io/
 
-Carrossel com contador
+CARROSSEL
+https://owlcarousel2.github.io/OwlCarousel2/demos/demos.html
 
+CARROSSEL COM CONTADOR
 Owl
 https://codepen.io/jovanivezic/pen/zNKgbe
 
