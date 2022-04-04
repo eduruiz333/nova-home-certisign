@@ -62,3 +62,11 @@ https://www.cssscript.com/carousel-counter-progressbar/
 https://www.cssscript.com/demo/carousel-counter-progressbar/
 
 
+++ PLUS ++
+Substituindo o plugin Beautify pelo comando nativo do VSCOD
+
+On Windows Shift + Alt + F.
+On Mac Shift + Option + F.
+On Linux Ctrl + Shift + I.
+
+
