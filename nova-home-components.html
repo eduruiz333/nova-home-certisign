@@ -41,13 +41,19 @@
                             <div class="col-12 col-sm-5 col-lg-6 px-0">
                                 <div class="owl-carousel owl-theme home-slider">
                                     <div class="item">
-                                        <h4>1</h4>
+                                        <a href="#">
+                                            <img src="./assets/images/bg-banner-01.png" alt="Texto descritivo para acessibilidade">
+                                        </a>
                                     </div>
                                     <div class="item">
-                                        <h4>2</h4>
+                                        <a href="#">
+                                            <img src="./assets/images/bg-banner-01.png" alt="Texto descritivo para acessibilidade">
+                                        </a>
                                     </div>
                                     <div class="item">
-                                        <h4>3</h4>
+                                        <a href="#">
+                                            <img src="./assets/images/bg-banner-01.png" alt="Texto descritivo para acessibilidade">
+                                        </a>
                                     </div>
                                 </div>
                             </div>
@@ -195,32 +201,11 @@
 
 <script>
     // CONFIG SLIDERS BANNER
-    var $homeSlider = $(".home-slider");
-
-    $(window).resize(function () {
-        showHomeSlider();
+    $('.home-slider').owlCarousel({
+        items:1,
+        margin:10,
+        autoHeight:true
     });
-
-    function showHomeSlider() {
-        if ($homeSlider.data("owlCarousel") !== "undefined") {
-            if (window.matchMedia('(max-width: 600px)').matches) {
-                initialHomeSlider();
-            } else {
-                destroyHomeSlider();
-            }
-        }
-    }
-    showHomeSlider();
-
-    function initialHomeSlider() {
-        $homeSlider.addClass("owl-carousel").owlCarousel({
-            items: 1,
-            loop: false,
-        });
-    }
-    function destroyHomeSlider() {
-        $homeSlider.trigger("destroy.owl.carousel").removeClass("owl-carousel");
-    }
 
 
     // CONBFIG SLIDRES COUNTER
