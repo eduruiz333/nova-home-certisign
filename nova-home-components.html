@@ -34,27 +34,36 @@
     <div role="main" id="maincontent">
         <div class="new-template new-home">
 
+            
             <section>
-                <div class="container-fluid banner mb-4">
-                    <div class="container">
-                        <div class="row">
-                            <div class="col-12 col-sm-5 col-lg-6 px-0">
-                                <div class="owl-carousel owl-theme home-slider">
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="./assets/images/bg-banner-01.png" alt="Texto descritivo para acessibilidade">
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="./assets/images/bg-banner-01.png" alt="Texto descritivo para acessibilidade">
-                                        </a>
-                                    </div>
-                                    <div class="item">
-                                        <a href="#">
-                                            <img src="./assets/images/bg-banner-01.png" alt="Texto descritivo para acessibilidade">
-                                        </a>
-                                    </div>
+                <div class="container-fluid banner">
+                    <div class="row">
+                        <div class="col-12 px-0 mx-0 mb-5">
+
+                            <div class="owl-carousel owl-theme home-slider">
+                                <div class="item">
+                                    <a href="#">
+                                        <img class="d-md-none" src="./assets/images/banner-mobile.jpg" alt="Texto descritivo para acessibilidade">
+                                        <img class="d-none d-sm-block" src="./assets/images/banner-desk.jpg" alt="Texto descritivo para acessibilidade">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img class="d-md-none" src="./assets/images/banner-mobile.jpg" alt="Texto descritivo para acessibilidade">
+                                        <img class="d-none d-sm-block" src="./assets/images/banner-desk.jpg" alt="Texto descritivo para acessibilidade">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img class="d-md-none" src="./assets/images/banner-mobile.jpg" alt="Texto descritivo para acessibilidade">
+                                        <img class="d-none d-sm-block" src="./assets/images/banner-desk.jpg" alt="Texto descritivo para acessibilidade">
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#">
+                                        <img class="d-md-none" src="./assets/images/banner-mobile.jpg" alt="Texto descritivo para acessibilidade">
+                                        <img class="d-none d-sm-block" src="./assets/images/banner-desk.jpg" alt="Texto descritivo para acessibilidade">
+                                    </a>
                                 </div>
                             </div>
                         </div>
@@ -202,11 +211,29 @@
 <script>
     // CONFIG SLIDERS BANNER
     $('.home-slider').owlCarousel({
-        items:1,
-        margin:10,
-        autoHeight:true
-    });
-
+        lazyLoad: true,
+        loop: true,
+        margin: 10,
+        responsiveClass: true,
+        autoHeight: true,
+        responsive: {
+            0: {
+                items: 1,
+                nav: false,
+                dots: false
+            },
+            544: {
+                items: 1,
+                nav: false,
+                dots: true
+            },
+            993: {
+                items: 1,
+                nav: false,
+                dots: true
+            }
+        }
+    })
 
     // CONBFIG SLIDRES COUNTER
     $('.slider').on('initialized.owl.carousel changed.owl.carousel', function (e) {
