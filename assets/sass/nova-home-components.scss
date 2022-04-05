@@ -170,6 +170,26 @@ $f-bold: 700;
                 font-weight: $f-semiBold;
             }
         }
+
+        .certistore {
+            h1 {
+                span {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: $f-semiBold;
+                }
+            }
+
+            .img-certistore {
+                width: 80;
+            }
+        }
+
+
+
+
+
     
         // CARROSSEL NUMERADO
         .carousel-counter {
