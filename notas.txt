@@ -34,6 +34,7 @@ utilizar o prophet upload no terminal - output
 
 CARD
 https://csgnddnp.atlassian.net/browse/SC-1301
+ATENÇÃO ÀS ANOTAÇÕES AO DESENVOLVEDOR QUE ESTÃO ANXOS AO ÉPICO
 
 MOBILE
 https://xd.adobe.com/view/2b63c055-52da-4b1f-a45d-63423b8f3e15-7e30/
