@@ -276,6 +276,15 @@ $f-bold: 700;
                     line-height: 30px;
                 }
             }
+
+            .certistore {
+                .display-adapta {
+                    display: flex;
+                    .row {
+                        width: 100%;
+                    }
+                }
+            }
     
         }
     
