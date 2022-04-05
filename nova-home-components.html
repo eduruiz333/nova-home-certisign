@@ -34,12 +34,10 @@
     <div role="main" id="maincontent">
         <div class="new-template new-home">
 
-            
             <section>
                 <div class="container-fluid banner">
                     <div class="row">
                         <div class="col-12 px-0 mx-0 mb-5">
-
                             <div class="owl-carousel owl-theme home-slider">
                                 <div class="item">
                                     <a href="#">
@@ -74,33 +72,49 @@
             <section>
                 <div class="container mb-4 mb-lg-5">
                     <div class="row">
-                        <div class="col-12">
+                        <div class="col-12 col-md-8 pr-md-4">
                             <ul class="list-cta">
-                                <li class="ico-infinite">Uso e renovação ilimitados.</li>
-                                <li class="ico-renew">Renovação e revogação automáticas.</li>
-                                <li class="ico-hierarchy">Para hierarquias ICP-Brasil e Corporativa.</li>
-                                <li class="ico-dashboard">Dashboard com ciclo de vida e parte financeira.</li>
+                                <li>
+                                    <span>+ de </span>
+                                    <br class="d-md-none"><strong><span class="big-text">12</span> milhões </strong>
+                                    <br>de identidades digitais emitidas
+                                </li>
+                                <li>
+                                    <strong class="big-text">100% </strong>
+                                    <br>das maiores empresas do país usam nossas soluções
+                                </li>
+                                <li>
+                                    <span>a cada </span>
+                                    <br class="d-md-none"><strong><span class="big-text"> 7</span> minutos, </strong>
+                                    <br>uma assinatura digital é realizada em nossa plataforma
+                                </li>
+                                <li>
+                                    <span>a cada </span>
+                                    <br class="d-md-none"><strong> <span class="big-text"> 30</span> segundos, </strong>
+                                    <br>validamos uma identidade usando biometria
+                                </li>
                             </ul>
+                        </div>
+                        <div class="col-12 col-md-4">
+                            <div class="box bg-blue">
+                                <h1>NPS <span>73</span></h1>
+                                <p>Semelhante as gigantes
+                                    <br> Netflix e Amazon</p>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
             <section>
-                <div class="container-fluid fluid-100 caas-bg-grey mb-4">
+                <div class="container-fluid bg-grey mb-4">
                     <div class="row">
                         <div class="col-12">
-                            <div class="container">
+                            <div class="container img-bg">
                                 <div class="row mb-3">
-                                    <div class="col-12 col-md-6">
-                                        <img src="/images/Landing/lpcaas/icone_lampada.png?$staticlink$"
-                                            alt="A imagem mostra o ícone de uma lâmpada">
-                                    </div>
-                                    <div class="col-12 col-md-6">
-                                        <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Laudantium iste
-                                            itaque ipsum sint corporis error tempora minus aliquid necessitatibus quia
-                                            eum eius, voluptas repellat voluptates doloremque, dolor cum fuga doloribus.
-                                        </p>
+                                    <div class="col-12">
+                                        <h1 class="color-blue">Protegemos a sua empresa contra a fraude digital</h1>
+                                        <p class="color-medium-grey">Biometria de face, voz e íris e certificação digital são alguns dos métodos que usamos para garantir a identidade dos seus clientes e cuidar da segurança do seu negócio no digital.</p>
                                     </div>
                                 </div>
                             </div>
@@ -211,11 +225,13 @@
 <script>
     // CONFIG SLIDERS BANNER
     $('.home-slider').owlCarousel({
+        autoplay: true,
         lazyLoad: true,
         loop: true,
-        margin: 10,
         responsiveClass: true,
         autoHeight: true,
+        autoplayTimeout: 7000,
+            smartSpeed: 800,
         responsive: {
             0: {
                 items: 1,

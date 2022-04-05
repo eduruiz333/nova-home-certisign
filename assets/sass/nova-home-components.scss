@@ -11,18 +11,6 @@ $f-medium: 500;
 $f-semiBold: 600;
 $f-bold: 700;
 
-$blue:#004165;
-$bluelight:#19A4C1;
-$orange: #FFA100;
-$white: #ffffff;
-$cinza: #f1f1f1;
-$grey: #BCBCBC;
-$dark-grey: #7F7F7F;
-$green-light:#689E16;
-$orange-light:#F17844;
-$blue-light:#3185B1;
-$yellow:#B5EA66;
-
 .new-template {
 
     &.new-home {
@@ -30,9 +18,29 @@ $yellow:#B5EA66;
         * {
             font-family: $font;
         }
-    
+        $white: #ffffff;
+        $blue:#004165;
+        $orange: #FFA100;
         $dark-orange: #D47500;
-        $dark-blue: #004165;
+        $grey: #6F7178;
+        $medium-grey: #494F54;
+        $dark-grey: #7F7F7F;
+        $bg-grey: #E8E8E8;
+
+
+        .color-blue {
+            color: $blue;
+        }
+        .color-grey {
+            color: $grey;
+        }
+        .color-medium-grey {
+            color: $medium-grey;
+        }
+        .color-dark-grey {
+            color: $medium-grey;
+        }
+        
     
         /////////////////////////////////////////////////////
         // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
@@ -48,6 +56,24 @@ $yellow:#B5EA66;
         // ATÉ AQUI
         /////////////////////////////////////////////////////
     
+        h1 {
+            font-weight: $f-bold;
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        h2 {
+            font-weight: $f-bold;
+            font-size: 16px;
+            line-height: 32px;
+        }
+
+        p {
+            font-weight: $f-medium;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
         .btn {
             color: $white !important;
             padding: 10px 20px;
@@ -71,22 +97,6 @@ $yellow:#B5EA66;
             }
         }
     
-        h2 {
-            font-weight: $f-bold !important;
-            font-size: 20px;
-            line-height: 25px;
-            margin-bottom: 14px;
-            color: $dark-orange;
-            margin-bottom: 30px;
-        }
-    
-        p {
-            font-size: 16px;
-            line-height: 25px;
-            font-weight: $f-medium;
-            color: $dark-grey;
-        }
-    
         .list-cta {
             list-style-type: none;
             padding: 0;
@@ -96,35 +106,70 @@ $yellow:#B5EA66;
             justify-content: space-between;
     
             li {
-                padding: 56px 5px 0;
+                padding: 14px 10px;
                 margin: 0 0 20px 0;
-                height: 150px;
                 width: 150px;
-                border: solid 1px $dark-orange;
+                height: 150px;
+                border: solid 1px $blue;
                 border-radius: 10px;
-                font-weight: $f-semiBold;
-                font-size: 16px;
-                color: $dark-grey;
-                line-height: 25px;
-    
-                &.ico-infinite {
-                    background: url('/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/Landing/lpcaas/ico-infinite.png') 5px 25px no-repeat;
-                }
-    
-                &.ico-renew {
-                    background: url('/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/Landing/lpcaas/ico-renew.png') 12px 13px no-repeat;
-                }
-    
-                &.ico-hierarchy {
-                    background: url('/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/Landing/lpcaas/ico-hierarchy.png') 5px 18px no-repeat;
-                }
-    
-                &.ico-dashboard {
-                    background: url('/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/Landing/lpcaas/ico-dashboard.png') 5px 18px no-repeat;
+                font-weight: $f-medium;
+                color: $blue;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                overflow: hidden;
+
+                strong {
+                    font-weight: $f-bold;
+                    display: inline-block;
+                    margin-bottom: 5px;
                 }
             }
         }
-    
+
+        .box {
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            
+            &.bg-blue {
+                * {
+                    color: $white;
+                }
+                background-color:$blue;
+
+                h1 {
+                    font-weight: $f-bold;
+                    font-size: 36px;
+                    line-height: 32px;
+                    margin-bottom: 10px;
+
+                    span {
+                        margin-left: 15px;
+                    }
+                }
+
+                p {
+                    font-weight: $f-semiBold;
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+
+            }
+        }
+
+        .bg-grey {
+            background-color: $bg-grey;
+        }
+        
+        .img-bg {
+            height: 390px;
+            background: url('../images/bg-dinheiro-mobile.jpg') center 0 no-repeat;
+            padding-top: 193px;
+            p {
+                font-weight: $f-semiBold;
+            }
+        }
     
         // CARROSSEL NUMERADO
         .carousel-counter {
@@ -167,20 +212,48 @@ $yellow:#B5EA66;
             // ATÉ AQUI
             /////////////////////////////////////////////////////
     
+            h1 {
+                font-size: 35px;
+                line-height: 45px;
+            }
+    
+            h2 {
+                font-size: 18px;
+                line-height: 32px;
+            }
+    
+            p {
+                font-size: 18px;
+                line-height: 23px;
+            }
+
             .banner {
                 .owl-dot {
                     span {
                         width: 15px;
                         height: 15px;
                         background-color: transparent;
-                        border: solid 1px $dark-blue;
+                        border: solid 1px $blue;
                     }
 
                     &.active {
                         span {
-                            background-color: $dark-blue !important;
+                            background-color: $blue !important;
                         }
                     }
+                }
+            }
+
+            .img-bg {
+                height: 600px;
+                background: url('../images/bg-dinheiro-desk.jpg') center 0 no-repeat;
+                padding-top: 360px;
+
+                h1, p {
+                    padding: 0 65px;
+                }
+                p {
+                    line-height: 30px;
                 }
             }
     
@@ -196,6 +269,72 @@ $yellow:#B5EA66;
             // ATÉ AQUI
             /////////////////////////////////////////////////////
     
+            .list-cta {
+        
+                li {
+                    padding: 14px 18px;
+                    margin: 0 0 20px 0;
+                    width: 286px;
+                    height: 173px;
+                    font-weight: $f-semiBold;
+                    color: $medium-grey;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: left;
+    
+                    span, strong {
+                        color: $blue;
+                        font-weight: $f-bold;
+                    }
+
+                    strong {
+                        display: inline-block;
+                        
+                        margin-bottom: 20px;
+                    }
+
+                    .big-text {
+                        font-size: 35px;
+                        line-height: 42px;
+                    }
+
+                }
+            }
+    
+            .box {
+                padding: 40px;
+                min-height: 95%;
+                max-height: 95%;
+                overflow: hidden;
+                
+                &.bg-blue {
+                    h1 {
+                        font-weight: $f-bold;
+                        font-size: 54px;
+                        line-height: 100px;
+                        margin-bottom: 10px;
+    
+                        span {
+                            margin-left: 0;
+                            display: block;
+                        }
+                    }
+    
+                    p {
+                        font-weight: $f-semiBold;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+    
+                }
+            }
+
+            .img-bg {
+
+                h1, p {
+                    padding: 0 175px;
+                }
+            }
     
         }
     
