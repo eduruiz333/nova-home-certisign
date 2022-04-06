@@ -363,6 +363,11 @@ $f-bold: 700;
                 line-height: 23px;
             }
 
+            .box {
+                max-width: 47%;
+                margin: 0 auto;
+            }
+
             .banner {
                 .owl-dot {
                     span {
@@ -560,6 +565,7 @@ $f-bold: 700;
     
             .box {
                 padding: 40px;
+                max-width: unset;
                 min-height: 95%;
                 max-height: 95%;
                 overflow: hidden;
@@ -645,6 +651,5 @@ $f-bold: 700;
 
         }
     }
-
 
 }
