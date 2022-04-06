@@ -257,7 +257,6 @@ $f-bold: 700;
         }
 
         .hist-sucesso {
-            
             .slider-content {
                 max-width: 510px;
                 margin: 0 auto;
@@ -275,7 +274,6 @@ $f-bold: 700;
                         font-weight: $f-bold;
                     }
                 }
-                
 
                 .carousel-counter {
                     max-width: 400px;
@@ -290,7 +288,8 @@ $f-bold: 700;
                         img {
                             display: inline-block;
                             margin-bottom: 30px;
-                            width: 80px;
+                            width: auto;
+                            height: 80px;
                         }
                     }
 
@@ -299,28 +298,27 @@ $f-bold: 700;
                         justify-content: space-between;
                         margin: 0 auto -23px;
                         max-width: 240px;
+
+                        .owl-prev,
+                        .owl-next {
+                            display: inline-block;
+                            width: 80px;
+                            height: 21px;
+                            background-position: 0 0;
+                            background-repeat: no-repeat;
+                            color: transparent;
+                            font-size: 0;
+                        }
+                
+                        .owl-prev {
+                            background-image: url('../images/arrow-left.png');
+                        }
+                        .owl-next {
+                            background-image: url('../images/arrow-right.png');
+                        }
                     }
-            
-                    .owl-prev,
-                    .owl-next {
-                        display: inline-block;
-                        width: 80px;
-                        height: 21px;
-                        background-position: 0 0;
-                        background-repeat: no-repeat;
-                        color: transparent;
-                        font-size: 0;
-                        
-                    }
-            
-                    .owl-prev {
-                        background-image: url('../images/arrow-left.png');
-                    }
-                    .owl-next {
-                        background-image: url('../images/arrow-right.png');
-                    }
-            
                 }
+
                 .slider-counter {
                     text-align: center;
                     letter-spacing: 5px;
@@ -490,6 +488,32 @@ $f-bold: 700;
                     font-size: 14px;
                 }
             }
+
+            .hist-sucesso {
+                .slider-content {
+                    max-width: 510px;
+                    
+                    h1 {
+                        font-size: 25px;
+                        line-height: 32px;
+        
+                        strong {
+                            font-size: 35px;
+                        }
+                    }
+    
+                    .carousel-counter {
+                        .owl-item {
+                            font-size: 18px;
+                            line-height: 22px;
+        
+                            img {
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+            }
     
         }
     
@@ -582,6 +606,12 @@ $f-bold: 700;
 
                 a {
                     font-size: 16px;
+                }
+            }
+
+            .hist-sucesso {
+                .slider-content {
+                    max-width: 670px;
                 }
             }
         }
