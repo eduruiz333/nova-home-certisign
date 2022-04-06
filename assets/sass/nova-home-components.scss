@@ -256,43 +256,83 @@ $f-bold: 700;
 
         }
 
+        .hist-sucesso {
+            
+            .slider-content {
+                max-width: 510px;
+                margin: 0 auto;
+                
+                h1 {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 8px;
+                    text-align: center;
+                    border: solid 2px $dark-grey;
+                    margin-bottom: 37px;
+    
+                    strong {
+                        font-size: 20px;
+                        font-weight: $f-bold;
+                    }
+                }
+                
 
+                .carousel-counter {
+                    max-width: 400px;
+                    margin: 0 auto;
 
+                    .owl-item {
+                        color: $medium-grey;
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 20px;
+    
+                        img {
+                            display: inline-block;
+                            margin-bottom: 30px;
+                            width: 80px;
+                        }
+                    }
 
-    
-        // CARROSSEL NUMERADO
-        .carousel-counter {
-            .owl-item {
-                background-color: #D2527F;
-                color: white;
-                text-align: center;
-                padding: 100px 0;
-            }
-    
-            .owl-prev,
-            .owl-next {
-                display: inline-block;
-            }
-    
-            .owl-next {
-                float: right;
-            }
-    
-            .slider-counter {
-                text-align: center;
-            }
-    
-            .info {
-                text-align: center;
-                margin-top: 110px;
+                    .owl-nav {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 auto -23px;
+                        max-width: 240px;
+                    }
+            
+                    .owl-prev,
+                    .owl-next {
+                        display: inline-block;
+                        width: 80px;
+                        height: 21px;
+                        background-position: 0 0;
+                        background-repeat: no-repeat;
+                        color: transparent;
+                        font-size: 0;
+                        
+                    }
+            
+                    .owl-prev {
+                        background-image: url('../images/arrow-left.png');
+                    }
+                    .owl-next {
+                        background-image: url('../images/arrow-right.png');
+                    }
+            
+                }
+                .slider-counter {
+                    text-align: center;
+                    letter-spacing: 5px;
+                }
             }
         }
+    
     
     
         ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
     
         @media screen and (min-width: 544px) {
-    
             /////////////////////////////////////////////////////
             // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
             .container {
@@ -454,7 +494,6 @@ $f-bold: 700;
         }
     
         @media screen and (min-width: 993px) {
-    
             /////////////////////////////////////////////////////
             // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
             .container {
@@ -548,7 +587,6 @@ $f-bold: 700;
         }
     
         @media screen and (min-width: 1367px) {
-    
             ///////////////////////////////////////////////////// 
             // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
             .container {
