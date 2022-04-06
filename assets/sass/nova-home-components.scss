@@ -27,6 +27,8 @@ $f-bold: 700;
         $dark-grey: #7F7F7F;
         $bg-grey: #E8E8E8;
 
+        background-color: $white;
+
 
         .color-blue {
             color: $blue;
@@ -65,7 +67,7 @@ $f-bold: 700;
         h2 {
             font-weight: $f-bold;
             font-size: 16px;
-            line-height: 32px;
+            line-height: 22px;
         }
 
         p {
@@ -76,21 +78,25 @@ $f-bold: 700;
 
         .btn {
             color: $white !important;
+            background-color: $blue !important;
+            font-size: 16px;
+            line-height: 16px;
             padding: 10px 20px;
-            background-color: $dark-orange !important;
             outline: none;
             border: none;
             width: 100%;
             text-align: center;
             border-radius: 10px;
     
-            &:hover,
+            &:hover {
+                background-color: $orange !important;
+            }
             &:focus,
             &:active,
             &:target,
             &:visited,
             &:link {
-                background-color: $dark-orange !important;
+                background-color: unset;
                 outline: none;
                 border: none;
                 box-shadow: none;
@@ -162,10 +168,18 @@ $f-bold: 700;
             background-color: $bg-grey;
         }
         
-        .img-bg {
-            height: 390px;
-            background: url('../images/bg-dinheiro-mobile.jpg') center 0 no-repeat;
-            padding-top: 193px;
+        .dinheiro {
+            background: rgb(208,213,207);
+            background: linear-gradient(125deg, rgba(208,213,207,1) 0%, rgba(221,221,221,1) 50%); 
+
+            img {
+                display: block;
+                width: 100%;
+                margin: 40px auto 20px;
+                -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); 
+                box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+            }
+
             p {
                 font-weight: $f-semiBold;
             }
@@ -182,8 +196,33 @@ $f-bold: 700;
             }
 
             .img-certistore {
-                width: 80;
+                display: block;
+                width: 160px;
+                margin: 10px auto 30px;
+
             }
+
+            .icones {
+                display: block;
+                height: 28px;
+                margin: 40px 0 10px;
+            }
+            
+            .crop {
+                width: 165px;
+                height: 305px;
+                object-fit: cover;
+                &.cel-1 {
+                    object-position: 0 0;
+                }
+                &.cel-2 {
+                    object-position: 49% 0;
+                }
+                &.cel-3 {
+                    object-position: 99% 0;
+                }
+            }
+
         }
 
 
@@ -264,13 +303,16 @@ $f-bold: 700;
                 }
             }
 
-            .img-bg {
+            .dinheiro {
                 height: 600px;
-                background: url('../images/bg-dinheiro-desk.jpg') center 0 no-repeat;
-                padding-top: 360px;
+                
+                img {
+                    width: 70%;
+                    margin-top: 60px;
+                }
 
                 h1, p {
-                    padding: 0 65px;
+                    padding: 0 135px;
                 }
                 p {
                     line-height: 30px;
@@ -278,10 +320,63 @@ $f-bold: 700;
             }
 
             .certistore {
+                h1 {
+                    font-size: 25px;
+                    line-height: 30px;
+                    font-weight: $f-bold;
+                    margin-bottom: 50px;
+                    span {
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                    }
+                }
+
+                .img-certistore {
+                    width: 230px;
+                }
+
                 .display-adapta {
                     display: flex;
+                    max-width: 720px;
+                    margin: -120px auto 40px;
+
                     .row {
-                        width: 100%;
+                        col {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    .icones {
+                        height: 52px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+                    .crop {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 192px;
+                        height: 375px;
+                        &.cel-1 {
+                            object-position: 0 0;
+                        }
+                        &.cel-2 {
+                            object-position: 49% 0;
+                            margin-top: 110px;
+                        }
+                        &.cel-3 {
+                            object-position: 99% 0;
+                        }
+                    }
+
+                    .btn {
+                        width: 132px;
+                        padding: 15px;
+                    }
+
+                    .fix-mr {
+                        margin-left: 25px;
                     }
                 }
             }
@@ -358,13 +453,6 @@ $f-bold: 700;
                 }
             }
 
-            .img-bg {
-
-                h1, p {
-                    padding: 0 175px;
-                }
-            }
-    
         }
     
         @media screen and (min-width: 1367px) {
@@ -384,6 +472,17 @@ $f-bold: 700;
                     width: 370px;
                 }
             }
+
+            .certistore {
+                .display-adapta {
+                    min-width: 980px;
+    
+                    .fix-mr {
+                        margin-left: 70px;
+                    }
+                }
+            }
+
         }
     }
 
