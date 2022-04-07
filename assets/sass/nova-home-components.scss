@@ -25,8 +25,9 @@ $f-bold: 700;
         $orange: #FFA100;
         $dark-orange: #D47500;
         $grey: #6F7178;
-        $medium-grey: #494F54;
-        $dark-grey: #7F7F7F;
+        $medium-grey: #7F7F7F;
+        $dark-grey: #494F54;
+
         $bg-grey: #E8E8E8;
         $bg-light-grey: #F6F6F8;
 
@@ -138,8 +139,8 @@ $f-bold: 700;
         }
 
         .bg-degrade-grey {
-            background: rgb(206,207,205);
-            background: linear-gradient(90deg, rgba(206,207,205,1) 0%, rgba(233,233,233,1) 50%); 
+            background: rgb(206, 207, 205);
+            background: linear-gradient(90deg, rgba(206, 207, 205, 1) 0%, rgba(233, 233, 233, 1) 50%);
         }
 
         .list-cta {
@@ -352,9 +353,6 @@ $f-bold: 700;
 
                 :nth-child(1) {
                     width: 250px;
-                    // height: 320px;
-                    object-fit: cover;
-                    object-position: 8% 0;
                     margin: 20px 0 0 40px;
                 }
 
@@ -365,18 +363,24 @@ $f-bold: 700;
                     left: 260px;
                 }
             }
-            
+
             .bg-grey {
                 padding: 14px 40px 20px;
-                
+
                 h1 {
-                    background: rgba(250,250,250,.8);
+                    color: $dark-grey;
+                    background: rgba(250, 250, 250, .8);
                     width: 120%;
                     padding: 7px 0;
                     margin: -63px 0 30px -40px;
                 }
-                
+
+                h3 {
+                    color: $dark-grey;
+                }
+
                 p {
+                    color: $grey;
                     font-weight: $f-semiBold;
                 }
             }
@@ -584,6 +588,30 @@ $f-bold: 700;
                 }
             }
 
+            .great-place {
+
+                .bg-grey {
+                    padding: 0 40px 0 0;
+                    background: unset;
+
+                    h1 {
+                        background: unset;
+                        width: auto;
+                        padding: unset;
+                        margin: 20px 0 10px;
+                        font-weight: $f-semiBold;
+                        font-size: 20px;
+                        line-height: 24px;
+                        color: $grey;
+                    }
+
+                    h3 {
+                        color: $dark-grey;
+                    }
+
+                }
+            }
+
         }
 
         @media screen and (min-width: 993px) {
@@ -598,10 +626,10 @@ $f-bold: 700;
             /////////////////////////////////////////////////////
 
             .bg-degrade-grey {
-                background: rgb(200,201,198);
-                background: linear-gradient(90deg, rgba(200,201,198,1) 0%, rgba(240,240,240,1) 50%);
+                background: rgb(200, 201, 198);
+                background: linear-gradient(90deg, rgba(200, 201, 198, 1) 0%, rgba(240, 240, 240, 1) 50%);
             }
-            
+
             .list-cta {
 
                 li {
@@ -694,6 +722,46 @@ $f-bold: 700;
             .hist-sucesso {
                 .slider-content {
                     max-width: 670px;
+                }
+            }
+
+            .great-place {
+
+                .bg-gptw {
+
+                    :nth-child(1) {
+                        width: auto;
+                        margin: 105px 0 0;
+                    }
+
+                    :nth-child(2) {
+                        height: auto;
+                        top: 160px;
+                        left: 380px;
+                    }
+                }
+
+                .bg-grey {
+                    padding: unset;
+
+                    h1 {
+                        margin: 120px 0 10px;
+                    }
+
+                    h3:nth-of-type(1n) {
+                        font-size: 35px;
+                        line-height: 45px;
+                    }
+
+                    h3:nth-of-type(2n) {
+                        font-size: 25px;
+                        line-height: 30px;
+                    }
+
+                    p {
+                        font-size: 25px;
+                        line-height: 32px;
+                    }
                 }
             }
         }
