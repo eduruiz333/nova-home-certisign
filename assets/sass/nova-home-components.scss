@@ -18,6 +18,7 @@ $f-bold: 700;
         * {
             font-family: $font;
         }
+
         $white: #ffffff;
         $link: #0645AD;
         $blue:#004165;
@@ -35,36 +36,42 @@ $f-bold: 700;
         .color-blue {
             color: $blue;
         }
+
         .color-grey {
             color: $grey;
         }
+
         .color-medium-grey {
             color: $medium-grey;
         }
+
         .color-dark-grey {
             color: $medium-grey;
         }
-        
-    
+
+
         /////////////////////////////////////////////////////
         // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
         .container-fluid {
             max-width: 100% !important;
             overflow: hidden !important;
             padding: 0;
-    
+
         }
+
         .container {
             padding: 0 20px;
         }
+
         // ATÉ AQUI
         /////////////////////////////////////////////////////
-    
+
         a {
             font-size: 14px;
             color: $link;
             font-weight: $f-semiBold;
             text-decoration: underline;
+
             &:hover {
                 text-decoration: none;
             }
@@ -81,7 +88,7 @@ $f-bold: 700;
             font-size: 18px;
             line-height: 22px;
         }
-        
+
         h3 {
             font-weight: $f-bold;
             font-size: 16px;
@@ -105,10 +112,11 @@ $f-bold: 700;
             width: 100%;
             text-align: center;
             border-radius: 10px;
-    
+
             &:hover {
                 background-color: $orange !important;
             }
+
             &:focus,
             &:active,
             &:target,
@@ -120,7 +128,11 @@ $f-bold: 700;
                 box-shadow: none;
             }
         }
-    
+
+        .bg-light-grey {
+            background-color: $bg-light-grey;
+        }
+
         .list-cta {
             list-style-type: none;
             padding: 0;
@@ -128,7 +140,7 @@ $f-bold: 700;
             display: flex;
             flex-wrap: wrap;
             justify-content: space-between;
-    
+
             li {
                 padding: 14px 10px;
                 margin: 0 0 20px 0;
@@ -155,11 +167,12 @@ $f-bold: 700;
             border-radius: 10px;
             padding: 20px;
             text-align: center;
-            
+
             &.bg-blue {
                 * {
                     color: $white;
                 }
+
                 background-color:$blue;
 
                 h1 {
@@ -182,20 +195,16 @@ $f-bold: 700;
             }
         }
 
-        .bg-light-grey {
-            background-color: $bg-light-grey;
-        }
-        
         .dinheiro {
-            background: rgb(208,213,207);
-            background: linear-gradient(125deg, rgba(208,213,207,1) 0%, rgba(221,221,221,1) 50%); 
+            background: rgb(208, 213, 207);
+            background: linear-gradient(125deg, rgba(208, 213, 207, 1) 0%, rgba(221, 221, 221, 1) 50%);
 
             img {
                 display: block;
                 width: 100%;
                 margin: 40px auto 20px;
-                -webkit-box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3); 
-                box-shadow: 0px 2px 5px 1px rgba(0,0,0,0.3);
+                -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
             }
 
             p {
@@ -225,17 +234,20 @@ $f-bold: 700;
                 height: 28px;
                 margin: 40px 0 10px;
             }
-            
+
             .crop {
                 width: 165px;
                 height: 305px;
                 object-fit: cover;
+
                 &.cel-1 {
                     object-position: 0 0;
                 }
+
                 &.cel-2 {
                     object-position: 49% 0;
                 }
+
                 &.cel-3 {
                     object-position: 99% 0;
                 }
@@ -246,8 +258,8 @@ $f-bold: 700;
         .box-img-2-sizes {
             img {
                 width: 188px;
-            display: block;
-            margin: 0 auto 15px;
+                display: block;
+                margin: 0 auto 15px;
             }
 
             h2 {
@@ -260,7 +272,7 @@ $f-bold: 700;
             .slider-content {
                 max-width: 510px;
                 margin: 0 auto;
-                
+
                 h1 {
                     font-size: 16px;
                     line-height: 20px;
@@ -268,7 +280,7 @@ $f-bold: 700;
                     text-align: center;
                     border: solid 2px $dark-grey;
                     margin-bottom: 37px;
-    
+
                     strong {
                         font-size: 20px;
                         font-weight: $f-bold;
@@ -284,7 +296,7 @@ $f-bold: 700;
                         text-align: center;
                         font-size: 14px;
                         line-height: 20px;
-    
+
                         img {
                             display: inline-block;
                             margin-bottom: 30px;
@@ -309,10 +321,11 @@ $f-bold: 700;
                             color: transparent;
                             font-size: 0;
                         }
-                
+
                         .owl-prev {
                             background-image: url('../images/arrow-left.png');
                         }
+
                         .owl-next {
                             background-image: url('../images/arrow-right.png');
                         }
@@ -325,29 +338,31 @@ $f-bold: 700;
                 }
             }
         }
-    
-    
-    
+
+
+
         ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
-    
+
         @media screen and (min-width: 544px) {
+
             /////////////////////////////////////////////////////
             // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
             .container {
                 max-width: 768px;
             }
+
             // ATÉ AQUI
             /////////////////////////////////////////////////////
-    
+
             a {
                 font-size: 16px;
             }
-            
+
             h1 {
                 font-size: 35px;
                 line-height: 45px;
             }
-    
+
             h2 {
                 font-size: 25px;
                 line-height: 30px;
@@ -357,7 +372,7 @@ $f-bold: 700;
                 font-size: 18px;
                 line-height: 22px;
             }
-    
+
             p {
                 font-size: 18px;
                 line-height: 23px;
@@ -388,15 +403,17 @@ $f-bold: 700;
 
             .dinheiro {
                 height: 600px;
-                
+
                 img {
                     width: 70%;
                     margin-top: 60px;
                 }
 
-                h1, p {
+                h1,
+                p {
                     padding: 0 135px;
                 }
+
                 p {
                     line-height: 30px;
                 }
@@ -408,6 +425,7 @@ $f-bold: 700;
                     line-height: 30px;
                     font-weight: $f-bold;
                     margin-bottom: 50px;
+
                     span {
                         margin-bottom: 5px;
                         font-size: 18px;
@@ -435,19 +453,23 @@ $f-bold: 700;
                         margin-left: auto;
                         margin-right: auto;
                     }
+
                     .crop {
                         display: block;
                         margin-left: auto;
                         margin-right: auto;
                         width: 192px;
                         height: 375px;
+
                         &.cel-1 {
                             object-position: 0 0;
                         }
+
                         &.cel-2 {
                             object-position: 49% 0;
                             margin-top: 110px;
                         }
+
                         &.cel-3 {
                             object-position: 99% 0;
                         }
@@ -468,7 +490,7 @@ $f-bold: 700;
                 img {
                     width: 100%;
                     display: block;
-                    margin: 0 auto 15px;
+                    margin: 0;
                 }
 
                 h1 {
@@ -497,21 +519,21 @@ $f-bold: 700;
             .hist-sucesso {
                 .slider-content {
                     max-width: 510px;
-                    
+
                     h1 {
                         font-size: 25px;
                         line-height: 32px;
-        
+
                         strong {
                             font-size: 35px;
                         }
                     }
-    
+
                     .carousel-counter {
                         .owl-item {
                             font-size: 18px;
                             line-height: 22px;
-        
+
                             img {
                                 height: 100px;
                             }
@@ -519,20 +541,22 @@ $f-bold: 700;
                     }
                 }
             }
-    
+
         }
-    
+
         @media screen and (min-width: 993px) {
+
             /////////////////////////////////////////////////////
             // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
             .container {
                 max-width: 993px;
             }
+
             // ATÉ AQUI
             /////////////////////////////////////////////////////
-    
+
             .list-cta {
-        
+
                 li {
                     padding: 14px 18px;
                     margin: 0 0 20px 0;
@@ -543,15 +567,16 @@ $f-bold: 700;
                     font-size: 18px;
                     line-height: 25px;
                     text-align: left;
-    
-                    span, strong {
+
+                    span,
+                    strong {
                         color: $blue;
                         font-weight: $f-bold;
                     }
 
                     strong {
                         display: inline-block;
-                        
+
                         margin-bottom: 20px;
                     }
 
@@ -562,37 +587,41 @@ $f-bold: 700;
 
                 }
             }
-    
+
             .box {
                 padding: 40px;
                 max-width: unset;
                 min-height: 95%;
                 max-height: 95%;
                 overflow: hidden;
-                
+
                 &.bg-blue {
                     h1 {
                         font-weight: $f-bold;
                         font-size: 54px;
                         line-height: 100px;
                         margin-bottom: 10px;
-    
+
                         span {
                             margin-left: 0;
                             display: block;
                         }
                     }
-    
+
                     p {
                         font-weight: $f-semiBold;
                         font-size: 18px;
                         line-height: 25px;
                     }
-    
+
                 }
             }
 
             .box-img-2-sizes {
+                img {
+                    width: 444px;
+                }
+
                 h1 {
                     font-size: 35px;
                     line-height: 45px;
@@ -621,8 +650,9 @@ $f-bold: 700;
                 }
             }
         }
-    
+
         @media screen and (min-width: 1367px) {
+
             ///////////////////////////////////////////////////// 
             // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
             .container {
@@ -630,10 +660,11 @@ $f-bold: 700;
                 padding-left: 0 !important;
                 padding-right: 0 !important;
             }
+
             // ATÉ AQUI
             /////////////////////////////////////////////////////
             .list-cta {
-        
+
                 li {
                     width: 370px;
                 }
@@ -642,7 +673,7 @@ $f-bold: 700;
             .certistore {
                 .display-adapta {
                     min-width: 980px;
-    
+
                     .fix-mr {
                         margin-left: 70px;
                     }
@@ -650,7 +681,9 @@ $f-bold: 700;
             }
 
             .dinheiro {
-                h1, p {
+
+                h1,
+                p {
                     padding: 0 180px;
                 }
             }
