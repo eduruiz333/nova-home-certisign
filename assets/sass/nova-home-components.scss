@@ -649,6 +649,18 @@ $f-bold: 700;
                 }
             }
 
+            .dinheiro {
+                h1, p {
+                    padding: 0 180px;
+                }
+            }
+
+            .hist-sucesso {
+                .slider-content {
+                    max-width: 845px;
+                }
+            }
+
         }
     }
 
