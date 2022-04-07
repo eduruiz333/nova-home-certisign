@@ -881,6 +881,8 @@ $f-bold: 700;
                 }                
     
                 h3 {
+                    width: unset;
+                    margin: unset;
                     font-size: 18px;
                     line-height: 23px;
                     text-align: left;
