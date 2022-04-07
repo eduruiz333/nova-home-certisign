@@ -30,6 +30,7 @@ $f-bold: 700;
 
         $bg-grey: #E8E8E8;
         $bg-light-grey: #F6F6F8;
+        $hover-btn: #d1d1d1;
 
         background-color: $white;
 
@@ -386,6 +387,81 @@ $f-bold: 700;
             }
         }
 
+        .form-nova-home {
+            overflow: visible !important;
+            background: $blue;
+            padding: 30px 0;
+            margin-top: 100px;
+
+            h1 {
+                font-size: 30px;
+                line-height: 22px;
+                font-weight: $f-bold;
+                color: $blue;
+                margin: -50px 0 20px 100px;
+                position: relative;
+
+                span {
+                    display: block;
+                    color: $white;
+                }
+
+                &::after {
+                    content: '';
+                    display: block;
+                    position: absolute;
+                    top: -20px;
+                    left: 82px;
+                    width: 36px;
+                    height: 31px;
+                    background: url('../images/ico-balao.png') center center no-repeat;
+                    background-size: contain;
+                }
+            }
+    
+            h3 {
+                color: $white;
+                font-weight: $f-medium;
+                font-size: 16px;
+                line-height: 23px;
+                margin-bottom: 32px;
+            }
+    
+            input {
+                border-radius: 5px;
+                font-size: 14px;
+                font-weight: $f-medium;
+                color: $grey;
+                padding: 10px 20px;
+    
+                &:focus {
+                    outline: none;
+                    box-shadow: none;
+                }
+            }
+    
+            button {
+                font-size: 14px;
+                font-weight: $f-semiBold;
+                width: 130px;
+                padding: 10px;
+                background-color: $orange !important;
+                border: none;
+                border-radius: 10px;
+                outline: none;
+                display: block;
+                margin: 0 auto;
+    
+                &:focus,
+                &:active {
+                    outline: none;
+                    border: none;
+                    box-shadow: none;
+                }
+    
+            }
+        }
+
 
         ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
 
@@ -612,6 +688,25 @@ $f-bold: 700;
                 }
             }
 
+            .form-nova-home {
+
+                h1 {
+                    margin-left: 110px;
+                }
+    
+                h3 {
+                    width: 510px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+    
+                input {
+                    width: 510px;
+                    margin-left: auto;
+                    margin-right: auto;
+                }
+            }
+
         }
 
         @media screen and (min-width: 993px) {
@@ -761,6 +856,45 @@ $f-bold: 700;
                     p {
                         font-size: 25px;
                         line-height: 32px;
+                    }
+                }
+            }
+
+            .form-nova-home {
+
+                form {
+                    display: flex;
+                    align-items: center;
+                }
+
+                h1 {
+                    font-size: 40px;
+                    line-height: 32px;
+                    margin: -61px 0 20px 0;
+    
+                    &::after {
+                        top: -30px;
+                        left: 115px;
+                        width: 56px;
+                        height: 49px;
+                    }
+                }                
+    
+                h3 {
+                    font-size: 18px;
+                    line-height: 23px;
+                    text-align: left;
+                }
+    
+                input {
+                    width:auto;
+                }
+    
+                button {
+                    display: block;
+
+                    &:hover {
+                        background-color: $hover-btn !important;
                     }
                 }
             }
