@@ -129,8 +129,17 @@ $f-bold: 700;
             }
         }
 
+        .bg-grey {
+            background-color: $bg-grey;
+        }
+
         .bg-light-grey {
             background-color: $bg-light-grey;
+        }
+
+        .bg-degrade-grey {
+            background: rgb(206,207,205);
+            background: linear-gradient(90deg, rgba(206,207,205,1) 0%, rgba(233,233,233,1) 50%); 
         }
 
         .list-cta {
@@ -196,9 +205,6 @@ $f-bold: 700;
         }
 
         .dinheiro {
-            background: rgb(208, 213, 207);
-            background: linear-gradient(125deg, rgba(208, 213, 207, 1) 0%, rgba(221, 221, 221, 1) 50%);
-
             img {
                 display: block;
                 width: 100%;
@@ -339,6 +345,42 @@ $f-bold: 700;
             }
         }
 
+        .great-place {
+
+            .bg-gptw {
+                position: relative;
+
+                :nth-child(1) {
+                    width: 250px;
+                    // height: 320px;
+                    object-fit: cover;
+                    object-position: 8% 0;
+                    margin: 20px 0 0 40px;
+                }
+
+                :nth-child(2) {
+                    position: absolute;
+                    height: 87px;
+                    top: 70px;
+                    left: 260px;
+                }
+            }
+            
+            .bg-grey {
+                padding: 14px 40px 20px;
+                
+                h1 {
+                    background: rgba(250,250,250,.8);
+                    width: 120%;
+                    padding: 7px 0;
+                    margin: -63px 0 30px -40px;
+                }
+                
+                p {
+                    font-weight: $f-semiBold;
+                }
+            }
+        }
 
 
         ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
@@ -555,6 +597,11 @@ $f-bold: 700;
             // ATÉ AQUI
             /////////////////////////////////////////////////////
 
+            .bg-degrade-grey {
+                background: rgb(200,201,198);
+                background: linear-gradient(90deg, rgba(200,201,198,1) 0%, rgba(240,240,240,1) 50%);
+            }
+            
             .list-cta {
 
                 li {
