@@ -59,6 +59,11 @@ $f-bold: 700;
             overflow: hidden !important;
             padding: 0;
 
+            &.banner {
+                height: unset;
+                background: none;
+            }
+
         }
 
         .container {
@@ -331,11 +336,11 @@ $f-bold: 700;
                         }
 
                         .owl-prev {
-                            background-image: url('../images/arrow-left.png');
+                            background-image: url('/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/homepage/new-home/arrow-left.png');
                         }
 
                         .owl-next {
-                            background-image: url('../images/arrow-right.png');
+                            background-image: url('/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/homepage/new-home/arrow-right.png');
                         }
                     }
                 }
@@ -414,7 +419,7 @@ $f-bold: 700;
                     left: 82px;
                     width: 36px;
                     height: 31px;
-                    background: url('../images/ico-balao.png') center center no-repeat;
+                    background: url('/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/homepage/new-home/ico-balao.png') center center no-repeat;
                     background-size: contain;
                 }
             }

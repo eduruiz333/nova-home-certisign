@@ -14,8 +14,11 @@ utilizar o comando gulp para rodar o compilador
 ===================================================
 
 Paths para colocar no salesforce
-/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/Landing/certicredit/banner_peixes.jpg
-/conteudo/video/video_LP_CertiCredit_2.mp4?$staticlink$
+CSS
+/on/demandware.static/-/Sites-CERTISIGN-BR-Library/default/dw1d62c41a/images/homepage/new-home/xxx.jpg
+
+HTML
+/images/homepage/new-home/xxx.jpg?$staticlink$
 
 ===================================================
 
