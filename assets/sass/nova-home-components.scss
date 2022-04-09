@@ -73,6 +73,8 @@ $f-bold: 700;
         // ATÉ AQUI
         /////////////////////////////////////////////////////
 
+
+        
         a {
             font-size: 14px;
             color: $link;
@@ -535,7 +537,6 @@ $f-bold: 700;
             }
 
             .dinheiro {
-                height: 600px;
 
                 img {
                     width: 70%;
@@ -801,7 +802,8 @@ $f-bold: 700;
 
             .box-img-2-sizes {
                 img {
-                    width: 444px;
+                    height: 100%;
+                    width: auto;
                 }
 
                 h1 {
@@ -902,11 +904,12 @@ $f-bold: 700;
                 }
     
                 input {
-                    width:auto;
+                    width: auto;
                 }
     
                 button {
                     display: block;
+                    margin: 0 0 0 auto;
 
                     &:hover {
                         background-color: $hover-btn !important;
@@ -915,7 +918,7 @@ $f-bold: 700;
             }
         }
 
-        @media screen and (min-width: 1367px) {
+        @media screen and (min-width: 1366px) {
 
             ///////////////////////////////////////////////////// 
             // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
@@ -955,6 +958,13 @@ $f-bold: 700;
             .hist-sucesso {
                 .slider-content {
                     max-width: 845px;
+                }
+            }
+
+            .form-nova-home {
+                input {
+                    width: 420px;
+
                 }
             }
 
