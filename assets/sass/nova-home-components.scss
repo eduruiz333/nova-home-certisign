@@ -59,6 +59,11 @@ $f-bold: 700;
             overflow: hidden !important;
             padding: 0;
 
+            &.banner {
+                height: unset;
+                background: none;
+            }
+
         }
 
         .container {
@@ -143,6 +148,10 @@ $f-bold: 700;
         .bg-degrade-grey {
             background: rgb(206, 207, 205);
             background: linear-gradient(90deg, rgba(206, 207, 205, 1) 0%, rgba(233, 233, 233, 1) 50%);
+        }
+
+        .banner {
+            margin-bottom: 37px;
         }
 
         .list-box {
@@ -506,6 +515,8 @@ $f-bold: 700;
             }
 
             .banner {
+                margin-bottom: 65px;
+
                 .owl-dot {
                     span {
                         width: 15px;
