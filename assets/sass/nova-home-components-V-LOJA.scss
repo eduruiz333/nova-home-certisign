@@ -156,19 +156,39 @@ $f-bold: 700;
             margin-bottom: 37px;
         }
 
-        .list-box {
+        .box-list {
             list-style-type: none;
             padding: 0;
             margin: 0;
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: space-between;
+
+            display: grid;
+            grid-template-columns: repeat(2, 2fr);
+            grid-auto-rows: 145px;
+            grid-gap: 20px;
+
+            grid-template-areas: 
+            'box-1 box-2'
+            'box-3 box-4'
+            'box-5 box-5';
+
+            .box-1 {
+                grid-area: box-1;
+            }
+            .box-2 {
+                grid-area: box-2;
+            }
+            .box-3 {
+                grid-area: box-3;
+            }
+            .box-4 {
+                grid-area: box-4;
+            }
+            .box-5 {
+                grid-area: box-5;
+            }
 
             li {
                 padding: 14px 10px;
-                margin: 0 0 20px 0;
-                width: 150px;
-                height: 150px;
                 border: solid 1px $blue;
                 border-radius: 10px;
                 font-weight: $f-medium;
@@ -184,14 +204,12 @@ $f-bold: 700;
                     margin-bottom: 5px;
                 }
             }
-        }
 
-        .box {
-            border-radius: 10px;
-            padding: 20px;
-            text-align: center;
+            .bg-blue {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
 
-            &.bg-blue {
                 * {
                     color: $white;
                 }
@@ -213,6 +231,7 @@ $f-bold: 700;
                     font-weight: $f-semiBold;
                     font-size: 16px;
                     line-height: 27px;
+                    margin-bottom: 0;
                 }
 
             }
@@ -512,11 +531,6 @@ $f-bold: 700;
                 line-height: 23px;
             }
 
-            .box {
-                max-width: 47%;
-                margin: 0 auto;
-            }
-
             .banner {
                 margin-bottom: 65px;
 
@@ -740,23 +754,34 @@ $f-bold: 700;
                 background: linear-gradient(90deg, rgba(200, 201, 198, 1) 0%, rgba(240, 240, 240, 1) 50%);
             }
 
-            .list-box {
-
+            .box-list {
+                grid-template-columns: repeat(3, 3fr);
+                grid-auto-rows: 175px;
+                grid-gap: 30px;
+    
+                grid-template-areas: 
+                'box-1 box-2 box-5'
+                'box-3 box-4 box-5';
+    
                 li {
                     padding: 14px 18px;
-                    margin: 0 0 20px 0;
-                    width: 286px;
-                    height: 173px;
                     font-weight: $f-semiBold;
-                    color: $medium-grey;
                     font-size: 18px;
                     line-height: 25px;
+                    color: $medium-grey;
                     text-align: left;
+
 
                     span,
                     strong {
                         color: $blue;
                         font-weight: $f-bold;
+                    }
+    
+                    strong {
+                        font-weight: $f-bold;
+                        display: inline-block;
+                        margin-bottom: 5px;
                     }
 
                     strong {
@@ -769,18 +794,12 @@ $f-bold: 700;
                         font-size: 35px;
                         line-height: 42px;
                     }
-
                 }
-            }
-
-            .box {
-                padding: 40px;
-                max-width: unset;
-                min-height: 95%;
-                max-height: 95%;
-                overflow: hidden;
-
-                &.bg-blue {
+    
+                .bg-blue {
+                    text-align: center;
+                    justify-content: center;
+    
                     h1 {
                         font-weight: $f-bold;
                         font-size: 54px;
@@ -798,7 +817,7 @@ $f-bold: 700;
                         font-size: 18px;
                         line-height: 25px;
                     }
-
+    
                 }
             }
 
@@ -932,14 +951,6 @@ $f-bold: 700;
 
             // ATÉ AQUI
             /////////////////////////////////////////////////////
-
-            
-            .list-box {
-
-                li {
-                    width: 372px;
-                }
-            }
 
             .certistore {
                 .display-adapta {
