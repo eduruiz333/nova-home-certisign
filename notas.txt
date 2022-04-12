@@ -1,4 +1,6 @@
-#################################### NOVA HOME - URTENTE ¯\_(ツ)_/¯
+############################################################################################################
+###################################### NOVA HOME - URTENTE ¯\_(ツ)_/¯ ######################################
+############################################################################################################
 
 CONFIGURAÇÃO ATUAL PARA COMPILAR SASS COM O GULP
 => https://www.youtube.com/watch?v=Sk5jMurFHCo
@@ -73,14 +75,3 @@ On Windows Shift + Alt + F.
 On Mac Shift + Option + F.
 On Linux Ctrl + Shift + I.
 
-
-Certif dig => https://loja.certisign.com.br/certificados/certificado-digital
-outro => https://loja.certisign.com.br/sobre-nos.html
-
-git checkout assets/images/banner-mobile-instituicao-ensino.jpg
-git checkout assets/images/banner-mobile-instituicao-financeira.jpg
-git checkout assets/images/banner-mobile-instituicao-financeira.png
-git checkout assets/images/banner-mobile-quem-somos.jpg
-git checkout assets/images/banner-mobile-quem-somos.png
-git checkout assets/images/logo-banpara.jpg
-git checkout assets/images/logo-senai.jpg
