@@ -340,7 +340,7 @@ $f-bold: 700;
                             display: inline-block;
                             margin-bottom: 30px;
                             width: auto;
-                            height: 80px;
+                            height: auto;
                         }
                     }
 
@@ -681,10 +681,6 @@ $f-bold: 700;
                         .owl-item {
                             font-size: 18px;
                             line-height: 22px;
-
-                            img {
-                                height: 100px;
-                            }
                         }
                     }
                 }
