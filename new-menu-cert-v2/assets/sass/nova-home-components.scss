@@ -1,0 +1,1289 @@
+html {
+    scroll-behavior: smooth;
+}
+
+$font: 'Poppins',
+sans-serif;
+
+$f-light: 300;
+$f-regular: 400;
+$f-medium: 500;
+$f-semiBold: 600;
+$f-bold: 700;
+
+.new-template {
+
+    &.new-home {
+
+        * {
+            font-family: $font;
+        }
+
+        $white: #ffffff;
+        $link: #0645AD;
+        $blue:#004165;
+        $orange: #FFA100;
+        $dark-orange: #D47500;
+        $grey: #6F7178;
+        $medium-grey: #494F54;
+        $dark-grey: #7F7F7F;
+        $bg-grey: #E8E8E8;
+        $bg-light-grey: #F6F6F8;
+
+        background-color: $white;
+
+
+        .color-blue {
+            color: $blue;
+        }
+
+        .color-grey {
+            color: $grey;
+        }
+
+        .color-medium-grey {
+            color: $medium-grey;
+        }
+
+        .color-dark-grey {
+            color: $medium-grey;
+        }
+
+
+        /////////////////////////////////////////////////////
+        // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+        .container-fluid {
+            max-width: 100% !important;
+            overflow: hidden !important;
+            padding: 0;
+
+        }
+
+        .container {
+            padding: 0 20px;
+        }
+
+        // ATÉ AQUI
+        /////////////////////////////////////////////////////
+        
+
+
+        .top-header-certisign {
+
+
+            *.aceHidden {
+                position: absolute;
+                left: -9999px;
+                top: -9999px;
+            }
+
+            .bg-menu{
+                background-color: $blue;
+            }
+
+            .navbar{
+
+                clear: both; border-bottom: 1px solid #D1D1D1; background-color: #fff;
+
+            }
+
+            .dropdown-item.active, .dropdown-item:active {
+                background-color: $white;
+            }            
+
+            .menu-top-col{
+                min-height: 50px;
+                display: flex;
+                align-items: center;
+
+                .logo-certisign {
+                    background: url('../images/certisign-logo.png') 0 0 no-repeat;
+                    width: 99px;
+                    height: 23px;
+
+                    a{
+                        display: block;
+                        width: 99px;
+                        height: 23px;
+                    }
+                }
+
+                .bandeira-brasil {
+                    background: url('../images/pt-br-language.svg') 0 0 no-repeat;
+                    width: 27px;
+                    height: 25px;
+                }
+    
+                .menu-top-col-a{
+                    display: flex; 
+                    align-items: center;  
+                    width: 100%;
+
+                    .form-buscar{
+                        position: relative; 
+                        top: -3px; 
+                        color:#494F54; 
+                        display:none; 
+                        float: left; 
+                        font-size: 14px; 
+                        font-weight: normal; 
+                        padding: 0 10px; 
+                        width: 375px; 
+                        height: 35px; 
+                        outline: none; 
+                        border-radius: 15px; 
+                        border: 0;
+                        margin:  -10px 10px 0 0;
+                    }
+
+                    ul.list-opcoes {
+                        margin-bottom: 0;
+                        display: flex;     
+                        align-content: space-between;
+                        width: 100%;   
+                        padding: 0;
+                        top: 8px;
+                        position: relative;
+                        justify-content: end;
+        
+                        li {
+                            color: #fff;
+                            list-style: none;
+                            font-size: 14px;
+                            font-weight: normal;
+                            margin-right: 60px;                        
+                        }
+            
+                        .ico-pesquisar {
+                            background: url('../images/icon-pesquisar.svg') 0 0 no-repeat;
+                            height: 25px;
+                            padding-left: 25px;
+                        }
+            
+                        .ico-login {
+                            background: url('../images/icon-login.svg') 0 0 no-repeat;
+                            height: 25px;
+                            padding-left: 20px;
+                        }
+            
+                        .ico-carrinho {
+                            background: url('../images/icon-carrinho.svg') 0 0 no-repeat;
+                            height: 25px;
+                            padding-left: 28px;
+                            margin-right: 30px;
+                        }
+
+                        .qdt-produtos{
+                            position: relative; 
+                            border-radius: 100%; 
+                            text-align: center; 
+                            font-size: 10px; 
+                            font-weight: bold; 
+                            color: #004165;  
+                            width: 19px; 
+                            height: 19px; 
+                            left: calc((-140px - (162px / 2)) / 2);   
+                            top: -9px; 
+                            background-color: #fff; 
+                            border: 2px solid #004165; 
+                            display: flex; 
+                            justify-content: center;
+                        }        
+                    }                   
+                }                
+            }
+
+            .show>.dropdown-menu {
+                max-height: 900px;
+                visibility: visible;
+            }
+
+            .dropdown-menu {
+                display: block;
+                max-height: 0;
+                visibility: hidden;
+                transition: all 0.35s ease-in-out;
+                overflow: hidden;
+            }
+
+            .navbar-expand-lg .navbar-nav .nav-link {
+                padding-right: 3rem;
+                padding-left: 0rem;
+                text-decoration: none;   
+               
+            }  
+
+            .navbar-light .navbar-nav .show>.nav-link {
+                color: $blue;
+                text-decoration: underline;
+                text-decoration: underline !important;
+            }            
+
+            .dropdown-menu {
+                border: 0;
+                border-radius: 0;
+            }
+
+            .setinha {
+                &.show {
+                    a {
+                        &::after {
+                            transform: rotate(178deg) !important;
+                        }
+                    }
+                }
+            }
+
+
+
+           /* .hamburger {
+                &.collapsed {                    
+                    .navbar-toggler-icon{
+                        background: url('../images/closex.png') 0 0 no-repeat;
+                        background-image: 100%;
+                        background-size: cover;                                           
+                    
+                    }
+                }
+            }*/
+          
+
+            .box-opcoes{
+                display: flex;
+                width: 100%; 
+                flex-wrap: wrap;               
+                
+
+                div.box-sublinks {
+                    width: -webkit-fill-available;
+                    padding: 0 20px 0 0;
+                    width: 33.33%;
+                    float: left;
+                    margin-bottom: 30px;
+
+                    h2, button {
+                        color: $orange;
+                        font-size: 13px;
+                        font-weight: 500;
+                        margin-bottom: 10px;
+
+                        button.btn-bottom{
+                            display: none;
+                            background: none;                            
+                            border: 0;
+                            margin: 0;
+                            padding: 0;
+                        }
+
+                        
+                    }
+
+                    ul.mostra-item-01{
+                        padding: 0;
+
+                        li{ 
+                            list-style: none;
+                            margin: 0;
+                            padding: 0;
+                            a {
+                                color: #494F54;
+                                font-size: 14px;
+                                font-weight: normal;
+                                text-decoration: none;    
+                            
+                                &:hover{
+                                    color: $blue;
+                                    text-decoration: underline;
+                                    
+                                }
+                            }
+                        }
+
+                    }
+                        
+                    }  
+
+                    h2.mod-assinatura-digital{
+                            color: $blue !important;
+                            border-bottom:0;
+                            padding-bottom:0;
+                            border-bottom: 3px solid;
+                            padding-bottom: 10px;
+                            border-bottom:3px solid $blue;
+                            padding-bottom: 10px;
+                       
+                    }                                
+            }
+
+
+                
+            .mn-aj{
+                padding-right: 0 !important;
+                width: 67px !important;
+            }            
+            
+            .titulo-certificado-digital{
+                color:$blue;
+                font-size: 14px;
+                width: 100%;
+                margin-bottom: 15px;
+                border-bottom: 3px solid $blue;
+                padding-bottom: 8px;
+            }
+
+            .w-cont{
+                margin: 0 auto;
+
+                .w-cont-1{
+                    width: 100%;
+                }
+            }
+        }
+
+        a {
+            font-size: 14px;
+            color: $link;
+            font-weight: $f-semiBold;
+            text-decoration: underline;
+
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        h1 {
+            font-weight: $f-bold;
+            font-size: 20px;
+            line-height: 25px;
+        }
+
+        h2 {
+            font-weight: $f-bold;
+            font-size: 18px;
+            line-height: 22px;
+        }
+
+        h3 {
+            font-weight: $f-bold;
+            font-size: 16px;
+            line-height: 20px;
+        }
+
+        p {
+            font-weight: $f-medium;
+            font-size: 14px;
+            line-height: 20px;
+        }
+
+        .btn {
+            color: $white !important;
+            background-color: $blue !important;
+            font-size: 16px;
+            line-height: 16px;
+            padding: 10px 20px;
+            outline: none;
+            border: none;
+            width: 100%;
+            text-align: center;
+            border-radius: 10px;
+
+            &:hover {
+                background-color: $orange !important;
+            }
+
+            &:focus,
+            &:active,
+            &:target,
+            &:visited,
+            &:link {
+                background-color: unset;
+                outline: none;
+                border: none;
+                box-shadow: none;
+            }
+        }
+
+        .bg-light-grey {
+            background-color: $bg-light-grey;
+        }
+
+        .list-cta {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+
+            li {
+                padding: 14px 10px;
+                margin: 0 0 20px 0;
+                width: 150px;
+                height: 150px;
+                border: solid 1px $blue;
+                border-radius: 10px;
+                font-weight: $f-medium;
+                color: $blue;
+                font-size: 14px;
+                line-height: 20px;
+                text-align: center;
+                overflow: hidden;
+
+                strong {
+                    font-weight: $f-bold;
+                    display: inline-block;
+                    margin-bottom: 5px;
+                }
+            }
+        }
+
+        .box {
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+
+            &.bg-blue {
+                * {
+                    color: $white;
+                }
+
+                background-color:$blue;
+
+                h1 {
+                    font-weight: $f-bold;
+                    font-size: 36px;
+                    line-height: 32px;
+                    margin-bottom: 10px;
+
+                    span {
+                        margin-left: 15px;
+                    }
+                }
+
+                p {
+                    font-weight: $f-semiBold;
+                    font-size: 16px;
+                    line-height: 27px;
+                }
+
+            }
+        }
+
+        .dinheiro {
+            background: rgb(200, 201, 198);
+            background: linear-gradient(90deg, rgba(200, 201, 198, 1) 0%, rgba(240, 240, 240, 1) 50%);
+
+            img {
+                display: block;
+                width: 100%;
+                margin: 40px auto 20px;
+                -webkit-box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+                box-shadow: 0px 2px 5px 1px rgba(0, 0, 0, 0.3);
+            }
+
+            p {
+                font-weight: $f-semiBold;
+            }
+        }
+
+        .certistore {
+            h1 {
+                span {
+                    display: block;
+                    font-size: 14px;
+                    line-height: 22px;
+                    font-weight: $f-semiBold;
+                }
+            }
+
+            .img-certistore {
+                display: block;
+                width: 160px;
+                margin: 10px auto 30px;
+
+            }
+
+            .icones {
+                display: block;
+                height: 28px;
+                margin: 40px 0 10px;
+            }
+
+            .crop {
+                width: 165px;
+                height: 305px;
+                object-fit: cover;
+
+                &.cel-1 {
+                    object-position: 0 0;
+                }
+
+                &.cel-2 {
+                    object-position: 49% 0;
+                }
+
+                &.cel-3 {
+                    object-position: 99% 0;
+                }
+            }
+
+        }
+
+        .box-img-2-sizes {
+            img {
+                width: 188px;
+                display: block;
+                margin: 0 auto 15px;
+            }
+
+            h2 {
+                font-size: 16px;
+            }
+
+        }
+
+        .hist-sucesso {
+            .slider-content {
+                max-width: 510px;
+                margin: 0 auto;
+
+                h1 {
+                    font-size: 16px;
+                    line-height: 20px;
+                    padding: 8px;
+                    text-align: center;
+                    border: solid 2px $dark-grey;
+                    margin-bottom: 37px;
+
+                    strong {
+                        font-size: 20px;
+                        font-weight: $f-bold;
+                    }
+                }
+
+                .carousel-counter {
+                    max-width: 400px;
+                    margin: 0 auto;
+
+                    .owl-item {
+                        color: $medium-grey;
+                        text-align: center;
+                        font-size: 14px;
+                        line-height: 20px;
+
+                        img {
+                            display: inline-block;
+                            margin-bottom: 30px;
+                            width: auto;
+                            height: 80px;
+                        }
+                    }
+
+                    .owl-nav {
+                        display: flex;
+                        justify-content: space-between;
+                        margin: 0 auto -23px;
+                        max-width: 240px;
+
+                        .owl-prev,
+                        .owl-next {
+                            display: inline-block;
+                            width: 80px;
+                            height: 21px;
+                            background-position: 0 0;
+                            background-repeat: no-repeat;
+                            color: transparent;
+                            font-size: 0;
+                        }
+
+                        .owl-prev {
+                            background-image: url('../images/arrow-left.png');
+                        }
+
+                        .owl-next {
+                            background-image: url('../images/arrow-right.png');
+                        }
+                    }
+                }
+
+                .slider-counter {
+                    text-align: center;
+                    letter-spacing: 5px;
+                }
+            }
+        }
+
+        .great-place {
+
+            .bg-gptw {
+                width: 318px;
+                height: 320px;
+                object-fit: cover;
+                object-position: 5% 0;
+            }
+        }
+
+
+        ////////////////////////////////////// MEDIA QUERIES //////////////////////////////////////
+
+        @media only screen and (max-width: 992px) and (min-width: 0px) {
+
+            .w-cont{
+                padding: 0;
+            }
+
+
+
+            .top-header-certisign {
+
+
+                .bt1{ display: none;}
+                
+                .dropdown-menu {
+                    float: left;
+                    padding: 0;
+                    margin: 0;
+                    font-size: 1rem;
+                    color: $white;
+                    text-align: left;
+                    list-style: none;
+                    background-color: $blue;
+                    background-clip: padding-box;
+                    border: 0;
+                    border-radius: 0;
+                }      
+                
+                .shadow {
+
+                    box-shadow: none!important;
+                }
+
+                .titulo-certificado-digital{
+                    color: $white;
+                    font-size: 16px;
+                    font-weight: 700;
+                    margin-bottom: 0;
+                }  
+
+                .menu-top-col .menu-top-col-a ul.list-opcoes .qdt-produtos {
+                    left: -18px;
+                }      
+
+                .form-buscar-none{
+                    display: none !important;
+                }
+                
+                
+                .box-Buscar-mob{
+                    margin-top: 20px;
+                    border-bottom: 2px solid rgba(255, 255, 255, 0.5);
+                    padding-bottom: 38px;
+                
+                    .form-buscar{
+                        width: 100%;
+                        border-radius: 10px;
+                        padding: 8px;
+                        outline: 0;
+                        border: 0;
+                        font-size: 14px;
+                        display: block !important;
+                    }
+                }
+
+                .dropdown-item.active, .dropdown-item:active {
+                    background-color: $blue;
+                }
+
+                .show > .dropdown-menu {
+                    max-height: 1422px;
+                }
+
+                .dropdown-item:focus, .dropdown-item:hover {
+                    background-color: transparent;
+                }
+
+
+                .dropdown-item {
+                    padding:0;
+                }
+
+
+                .ico-carrinho{
+                    margin-right: 0;
+                    
+                   
+
+                 }
+
+                  .carrinhoEsc{ display: none;}
+
+
+
+                  ul.list-opcoes {
+
+    
+                    .ico-carrinho {
+                        
+                        margin-right: 0 !important;
+                    }
+
+                 
+                }
+
+            .mob-btt{ 
+                border-bottom:1px solid rgba(255, 255, 255, 0.4); 
+                padding: 15px 0 15px 0;
+            }
+                
+                .box-opcoes {
+
+                    display: inherit;
+
+                    
+                    
+                    div.box-sublinks{
+
+                        width: 100%;
+                        padding: 0 20px;
+                        margin-bottom: 0;
+
+                        &.box-spc{
+
+                            padding: 0;
+                            margin-top: 20px;
+                        }
+
+                        button.btn-bottom{
+                            display: block !important;
+                            color: $white;
+                            outline: none;
+                            font-size: 14px;
+                        }
+
+                        .btn-links{
+
+                            display: none;
+                        }
+                        
+
+                        h2{
+                            color: $white;
+                        }
+
+                        button.btn-assinatura-digital{
+                            font-size: 16px !important;
+                            font-weight: 700;
+                        }
+
+                        ul.mostra-item-01{
+
+                            display: none;
+                            margin-bottom: 30px;
+                            margin-left: 20px;
+
+                            &.mostra-item-02{
+                                display: block;
+                                margin-bottom: 0;
+
+                                li{
+                                    padding-left:20px;
+                                   
+                                }
+                                
+
+                            }
+
+                            li{
+
+                                margin-bottom: 10px !important;
+
+                                a {
+                                    color: #fff;
+
+                                    &:hover{
+                                        color: #fff;
+                                      }
+                                }
+                            }
+                        }
+
+                        
+                        
+                    }               
+                    
+                }  
+                
+                
+                h2.mod-assinatura-digital{
+                    color: $white !important;
+                    font-size: 16px;                    
+                }
+
+                .menu-top-col{
+
+                    display: initial !important;
+                    margin: 0 auto;
+
+
+                    .logo-certisign {
+                        background: url('../images/certigin-mobile.svg') 0 0 no-repeat;
+                        width: 40px;
+                        height: 40px;
+                        margin: 0 auto;
+
+                        a{
+                            display: block;
+                            width: 40px;
+                            height: 40px;
+                        }
+                    }                      
+                }
+            }
+
+
+            .navbar-nav .nav-link {
+                color: $white;
+                font-size: 16px;
+            }
+
+            .navbar-nav .show > .nav-link {
+              color: $white !important; 
+            } 
+
+            .top-header-certisign .navbar {
+                clear: both;
+                background-color: $blue !important;
+                padding: 0;                               
+            }  
+
+            .navbar-light .navbar-toggler-icon {
+                background-image: url('../images/handburg.svg');
+            }
+
+            .navbar-toggler:not(:disabled):not(.disabled) {
+                cursor: pointer;
+                margin-top: -57px;
+                border: 0;
+                background-color: transparent;
+                margin-left: 0;
+
+                padding-top: 10px;
+                position: absolute;
+                margin-left: -13px;
+                
+            }
+
+
+            .logo-certisign {
+                position: relative;
+                top: 13px;
+            }
+
+
+            .menu-top-col-a {
+                position: relative;
+                top: -20px;
+                right: -19px;
+            }
+
+
+            .login-mob{
+                background: url('../images/icon-login.svg') no-repeat 0 24px; 
+                padding:15px 0 15px 20px !important;
+                
+            }
+            
+
+            .navbar-toggler:focus{
+                
+                border: 0 !important;
+                outline: 0;
+            }
+            
+            .iconlupa{
+                background:$white url('../images/icon-lupa.svg') no-repeat 10px 10px; padding-left: 30px !important;
+                
+            }
+
+            .navbar>.container, .navbar>.container-fluid {
+                display: block ;
+            }
+
+
+
+
+        }
+
+
+        @media screen and (min-width: 544px) {
+
+            /////////////////////////////////////////////////////
+            // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+            .container {
+                max-width: 768px;
+            }
+
+            // ATÉ AQUI
+            /////////////////////////////////////////////////////
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            a {
+                font-size: 16px;
+            }
+
+            h1 {
+                font-size: 35px;
+                line-height: 45px;
+            }
+
+            h2 {
+                font-size: 25px;
+                line-height: 30px;
+            }
+
+            h3 {
+                font-size: 18px;
+                line-height: 22px;
+            }
+
+            p {
+                font-size: 18px;
+                line-height: 23px;
+            }
+
+            .box {
+                max-width: 47%;
+                margin: 0 auto;
+            }
+
+            .banner {
+                .owl-dot {
+                    span {
+                        width: 15px;
+                        height: 15px;
+                        margin-top: 10px;
+                        background-color: transparent;
+                        border: solid 1px $blue;
+                    }
+
+                    &.active {
+                        span {
+                            background-color: $blue !important;
+                        }
+                    }
+                }
+            }
+
+            .dinheiro {
+                height: 600px;
+
+                img {
+                    width: 70%;
+                    margin-top: 60px;
+                }
+
+                h1,
+                p {
+                    padding: 0 135px;
+                }
+
+                p {
+                    line-height: 30px;
+                }
+            }
+
+            .certistore {
+                h1 {
+                    font-size: 25px;
+                    line-height: 30px;
+                    font-weight: $f-bold;
+                    margin-bottom: 50px;
+
+                    span {
+                        margin-bottom: 5px;
+                        font-size: 18px;
+                    }
+                }
+
+                .img-certistore {
+                    width: 230px;
+                }
+
+                .display-adapta {
+                    display: flex;
+                    max-width: 720px;
+                    margin: -120px auto 40px;
+
+                    .row {
+                        col {
+                            display: flex;
+                            justify-content: center;
+                        }
+                    }
+
+                    .icones {
+                        height: 52px;
+                        margin-left: auto;
+                        margin-right: auto;
+                    }
+
+                    .crop {
+                        display: block;
+                        margin-left: auto;
+                        margin-right: auto;
+                        width: 192px;
+                        height: 375px;
+
+                        &.cel-1 {
+                            object-position: 0 0;
+                        }
+
+                        &.cel-2 {
+                            object-position: 49% 0;
+                            margin-top: 110px;
+                        }
+
+                        &.cel-3 {
+                            object-position: 99% 0;
+                        }
+                    }
+
+                    .btn {
+                        width: 132px;
+                        padding: 15px;
+                    }
+
+                    .fix-mr {
+                        margin-left: 25px;
+                    }
+                }
+            }
+
+            .box-img-2-sizes {
+                img {
+                    width: 100%;
+                    display: block;
+                    margin: 0;
+                }
+
+                h1 {
+                    font-size: 20px;
+                    line-height: 25px;
+                    font-weight: $f-semiBold;
+                }
+
+                h2 {
+                    font-size: 16px;
+                    line-height: 22px;
+                    font-weight: $f-semiBold;
+                }
+
+                p {
+                    font-size: 14px;
+                    line-height: 20px;
+                    font-weight: $f-medium;
+                }
+
+                a {
+                    font-size: 14px;
+                }
+            }
+
+            .hist-sucesso {
+                .slider-content {
+                    max-width: 510px;
+
+                    h1 {
+                        font-size: 25px;
+                        line-height: 32px;
+
+                        strong {
+                            font-size: 35px;
+                        }
+                    }
+
+                    .carousel-counter {
+                        .owl-item {
+                            font-size: 18px;
+                            line-height: 22px;
+
+                            img {
+                                height: 100px;
+                            }
+                        }
+                    }
+                }
+            }
+
+        }
+
+        @media screen and (min-width: 993px) {
+
+            /////////////////////////////////////////////////////
+            // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+            .container {
+                max-width: 993px;
+            }
+
+            // ATÉ AQUI
+            /////////////////////////////////////////////////////
+            
+
+            .list-cta {
+
+                li {
+                    padding: 14px 18px;
+                    margin: 0 0 20px 0;
+                    width: 286px;
+                    height: 173px;
+                    font-weight: $f-semiBold;
+                    color: $medium-grey;
+                    font-size: 18px;
+                    line-height: 25px;
+                    text-align: left;
+
+                    span,
+                    strong {
+                        color: $blue;
+                        font-weight: $f-bold;
+                    }
+
+                    strong {
+                        display: inline-block;
+
+                        margin-bottom: 20px;
+                    }
+
+                    .big-text {
+                        font-size: 35px;
+                        line-height: 42px;
+                    }
+
+                }
+            }
+
+            .box {
+                padding: 40px;
+                max-width: unset;
+                min-height: 95%;
+                max-height: 95%;
+                overflow: hidden;
+
+                &.bg-blue {
+                    h1 {
+                        font-weight: $f-bold;
+                        font-size: 54px;
+                        line-height: 100px;
+                        margin-bottom: 10px;
+
+                        span {
+                            margin-left: 0;
+                            display: block;
+                        }
+                    }
+
+                    p {
+                        font-weight: $f-semiBold;
+                        font-size: 18px;
+                        line-height: 25px;
+                    }
+
+                }
+            }
+
+            .box-img-2-sizes {
+                img {
+                    width: 444px;
+                }
+
+                h1 {
+                    font-size: 35px;
+                    line-height: 45px;
+                }
+
+                h2 {
+                    font-size: 25px;
+                    line-height: 35px;
+                    font-weight: $f-semiBold;
+                }
+
+                p {
+                    font-size: 18px;
+                    line-height: 30px;
+                    font-weight: $f-medium;
+                }
+
+                a {
+                    font-size: 16px;
+                }
+            }
+
+            .hist-sucesso {
+                .slider-content {
+                    max-width: 670px;
+                }
+            }
+        }
+
+        @media screen and (min-width: 1367px) {
+
+            ///////////////////////////////////////////////////// 
+            // NOVAS DEFINIÇÕES DE BREAKPOINTS, NÃO ALTERAR DAQUI...
+            .container {
+                max-width: 1200px;
+                padding-left: 0 !important;
+                padding-right: 0 !important;
+            }
+
+            // ATÉ AQUI
+            /////////////////////////////////////////////////////
+            .list-cta {
+
+                li {
+                    width: 370px;
+                }
+            }
+
+            .certistore {
+                .display-adapta {
+                    min-width: 980px;
+
+                    .fix-mr {
+                        margin-left: 70px;
+                    }
+                }
+            }
+
+            .dinheiro {
+
+                h1,
+                p {
+                    padding: 0 180px;
+                }
+            }
+
+            .hist-sucesso {
+                .slider-content {
+                    max-width: 845px;
+                }
+            }
+
+        }
+    }
+
+}
